@@ -45,7 +45,7 @@ if tracking_server == "itu-training":
     os.environ["AWS_SECRET_ACCESS_KEY"] = "tqvdSsEDnBWTDuGkZYVsRKnTeu"
 
 elif tracking_server == "my-azure":
-    ml_client = MLClient.from_config(credential=DefaultAzureCredential())
+    ml_client = MLClient.from_config(credential=InteractiveBrowserCredential())
     mlflow_tracking_uri = ml_client.workspaces.get(ml_client.workspace_name).mlflow_tracking_uri
     mlflow.set_tracking_uri(mlflow_tracking_uri)
 
