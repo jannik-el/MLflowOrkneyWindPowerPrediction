@@ -36,7 +36,6 @@ sys.path.append('..')
 import fx
 
 
-
 tracking_server = "itu-training"
 
 if tracking_server == "itu-training":
