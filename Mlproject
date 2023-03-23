@@ -4,4 +4,7 @@ conda_env: conda_env.yaml
 
 entry_points:
   main:
-    command: "python sklearn_mlflow_pipeline.py"
+    parameters:
+      tracking_server: {type: string, default: "local"}
+      days: {type: int, default: 90}
+    command: "python sklearn_mlflow_pipeline.py {tracking_server} {days}"

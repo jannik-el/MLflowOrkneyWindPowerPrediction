@@ -36,7 +36,7 @@ sys.path.append('..')
 import fx
 
 
-tracking_server = "itu-training"
+tracking_server = "my-azure"
 
 if tracking_server == "itu-training":
     mlflow.set_tracking_uri("http://training.itu.dk:5000/")
@@ -54,48 +54,55 @@ elif tracking_server == "local":
     pass
 
 mlflow.set_experiment("JELS-Orkney-Wind-sklearn-GridSearchCV")
-with mlflow.start_run():
-    mlflow.autolog()
 
-    days = 90
-    mlflow.log_param("days", days)
-    data = fx.pull_data(days)
+mlflow.start_run()
+mlflow.sklearn.autolog(max_tuning_runs=1)
 
-    pipeline = Pipeline(steps=[
-        ("col_transformer", ColumnTransformer(transformers=[
-            ("time", None, []),
-            ("Speed", None, ["Speed"]),
-            ("Direction", None, ["Direction"]),
-            ], remainder="drop")),
-        ("model", None)
-    ])
+days = 90
+mlflow.log_param("days", days)
+data = fx.pull_data(days)
 
-    params = {
-        'col_transformer__time' : ["drop", None, fx.TimestampTransformer()],
-        'col_transformer__Speed': [None, StandardScaler(), PolynomialFeatures(), fx.EmpiricalWaveletTransform(level=5)],
-        'col_transformer__Direction': ["drop", fx.WindDirectionMapper(), fx.CompassToCartesianTransformer()],
-        'model': [
-            LinearRegression(), 
-            MLPRegressor(hidden_layer_sizes=(150, 150), activation='tanh', solver='sgd'), 
-            SVR(kernel='rbf', gamma='scale', C=1.0, epsilon=0.1),
-            HuberRegressor(epsilon=1.35, alpha=0.0001),
-            RANSACRegressor(min_samples=0.1, max_trials=100),
-            GaussianProcessRegressor(alpha=0.1, kernel=RBF()) 
-        ]
-    }
+pipeline = Pipeline(steps=[
+    ("col_transformer", ColumnTransformer(transformers=[
+        ("time", None, []),
+        ("Speed", None, ["Speed"]),
+        ("Direction", None, ["Direction"]),
+        ], remainder="drop")),
+    ("model", None)
+])
 
-    tscv = TimeSeriesSplit(n_splits=5)
+params = {
+    'col_transformer__time' : ["drop", None, fx.TimestampTransformer()],
+    'col_transformer__Speed': [None, StandardScaler(), PolynomialFeatures(), fx.EmpiricalWaveletTransform(level=5)],
+    'col_transformer__Direction': ["drop", fx.WindDirectionMapper(), fx.CompassToCartesianTransformer()],
+    'model': [
+        LinearRegression(), 
+        MLPRegressor(hidden_layer_sizes=(150, 150), activation='tanh', solver='sgd'), 
+        SVR(kernel='rbf', gamma='scale', C=1.0, epsilon=0.1),
+        HuberRegressor(epsilon=1.35, alpha=0.0001),
+        RANSACRegressor(min_samples=0.1, max_trials=100),
+        GaussianProcessRegressor(alpha=0.1, kernel=RBF()) 
+    ]
+}
 
-    scorer = "neg_mean_absolute_percentage_error"
+tscv = TimeSeriesSplit(n_splits=5)
 
-    gridsearch = GridSearchCV(pipeline, params, cv=tscv, scoring=scorer, n_jobs=-1, verbose=1)
+scorer = "neg_mean_absolute_percentage_error"
 
-    X_train, y_train, X_test, y_test = fx.data_splitting(data, output_val="Total")
+gridsearch = GridSearchCV(pipeline, params, cv=tscv, scoring=scorer, n_jobs=-1, verbose=1)
 
-    gridsearch.fit(X_train, y_train)
+X_train, y_train, X_test, y_test = fx.data_splitting(data, output_val="Total")
 
-    mlflow.sklearn.log_model(gridsearch, "Model")
+gridsearch.fit(X_train, y_train)
 
-    predictions = gridsearch.predict(X_test)
+mlflow.sklearn.log_model(gridsearch, "Model")
 
-    mlflow.log_metric("test_mse", fx.MSE(y_test, predictions))
+predictions = gridsearch.predict(X_test)
+
+mlflow.log_metric("test_mse", fx.MSE(y_test, predictions))
+
+print("Done")
+mlflow.end_run()
+
+# terminate the script
+exit()
