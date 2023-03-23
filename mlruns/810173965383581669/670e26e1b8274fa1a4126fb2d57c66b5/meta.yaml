@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/mlruns/810173965383581669/670e26e1b8274fa1a4126fb2d57c66b5/artifacts
+end_time: 1678880671917
+entry_point_name: ''
+experiment_id: '810173965383581669'
+lifecycle_stage: active
+run_id: 670e26e1b8274fa1a4126fb2d57c66b5
+run_name: masked-boar-478
+run_uuid: 670e26e1b8274fa1a4126fb2d57c66b5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678880646071
+status: 3
+tags: []
+user_id: janni

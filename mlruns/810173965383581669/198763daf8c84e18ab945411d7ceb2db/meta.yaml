@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/mlruns/810173965383581669/198763daf8c84e18ab945411d7ceb2db/artifacts
+end_time: 1678457777406
+entry_point_name: ''
+experiment_id: '810173965383581669'
+lifecycle_stage: active
+run_id: 198763daf8c84e18ab945411d7ceb2db
+run_name: grandiose-croc-216
+run_uuid: 198763daf8c84e18ab945411d7ceb2db
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678457757760
+status: 3
+tags: []
+user_id: janni

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/mlruns/810173965383581669/8040cff4bd2447849adc674d6ea185b9/artifacts
+end_time: 1678456753686
+entry_point_name: ''
+experiment_id: '810173965383581669'
+lifecycle_stage: active
+run_id: 8040cff4bd2447849adc674d6ea185b9
+run_name: capable-cub-349
+run_uuid: 8040cff4bd2447849adc674d6ea185b9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678456713772
+status: 3
+tags: []
+user_id: janni

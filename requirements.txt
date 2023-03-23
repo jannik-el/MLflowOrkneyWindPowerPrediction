@@ -1,0 +1,10 @@
+# requirements.txt file
+scikit-learn
+scikit-learn-intelex
+mlflow
+azureml-core
+azure-ai-ml
+azure-identity
+influxdb
+ewtpy
+boto3

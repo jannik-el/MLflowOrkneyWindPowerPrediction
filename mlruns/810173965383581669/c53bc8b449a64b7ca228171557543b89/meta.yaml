@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/mlruns/810173965383581669/c53bc8b449a64b7ca228171557543b89/artifacts
+end_time: 1678882199579
+entry_point_name: ''
+experiment_id: '810173965383581669'
+lifecycle_stage: active
+run_id: c53bc8b449a64b7ca228171557543b89
+run_name: crawling-zebra-898
+run_uuid: c53bc8b449a64b7ca228171557543b89
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678882176215
+status: 3
+tags: []
+user_id: janni

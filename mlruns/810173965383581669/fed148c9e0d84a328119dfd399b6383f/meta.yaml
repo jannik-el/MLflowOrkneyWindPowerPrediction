@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/mlruns/810173965383581669/fed148c9e0d84a328119dfd399b6383f/artifacts
+end_time: 1678882396427
+entry_point_name: ''
+experiment_id: '810173965383581669'
+lifecycle_stage: active
+run_id: fed148c9e0d84a328119dfd399b6383f
+run_name: bold-robin-455
+run_uuid: fed148c9e0d84a328119dfd399b6383f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678882373713
+status: 3
+tags: []
+user_id: janni

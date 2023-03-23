@@ -1,0 +1,7 @@
+name: Orkney-Windpower-Prediction
+
+python_env: python_env.yaml
+
+entry_points:
+  main:
+    command: "python sklearn_mlflow_pipeline.py"

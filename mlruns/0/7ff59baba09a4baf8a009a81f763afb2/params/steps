@@ -1,0 +1,2 @@
+[('col_transformer', ColumnTransformer(transformers=[('time', None, []), ('Speed', None, ['Speed']),
+                                ('Direction', None, ['Direction'])])), ('model', None)]

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/mlruns/312669126994964587/47b01924cb99487bb21d3abaf2b0578c/artifacts
+end_time: 1678981958267
+entry_point_name: ''
+experiment_id: '312669126994964587'
+lifecycle_stage: active
+run_id: 47b01924cb99487bb21d3abaf2b0578c
+run_name: gaudy-gnu-580
+run_uuid: 47b01924cb99487bb21d3abaf2b0578c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678981938659
+status: 3
+tags: []
+user_id: janni

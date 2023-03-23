@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/mlruns/810173965383581669/b85a7400b03a4bdb916f7478468d64ad/artifacts
+end_time: 1678457481090
+entry_point_name: ''
+experiment_id: '810173965383581669'
+lifecycle_stage: active
+run_id: b85a7400b03a4bdb916f7478468d64ad
+run_name: selective-cow-226
+run_uuid: b85a7400b03a4bdb916f7478468d64ad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678457479774
+status: 4
+tags: []
+user_id: janni

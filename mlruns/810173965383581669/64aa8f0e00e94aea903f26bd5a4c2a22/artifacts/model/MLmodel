@@ -1,0 +1,25 @@
+artifact_path: model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.2.1
+mlflow_version: 2.2.0
+model_uuid: b435d9091e2941d99be9099676b2a646
+run_id: 64aa8f0e00e94aea903f26bd5a4c2a22
+signature:
+  inputs: '[{"name": "ANM", "type": "double"}, {"name": "Non-ANM", "type": "double"},
+    {"name": "Total", "type": "double"}, {"name": "Direction", "type": "string"},
+    {"name": "Lead_hours", "type": "string"}, {"name": "Source_time", "type": "double"},
+    {"name": "Speed", "type": "double"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+utc_time_created: '2023-03-15 11:44:23.809363'

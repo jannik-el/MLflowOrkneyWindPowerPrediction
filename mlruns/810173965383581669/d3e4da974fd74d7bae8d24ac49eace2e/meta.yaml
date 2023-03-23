@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/mlruns/810173965383581669/d3e4da974fd74d7bae8d24ac49eace2e/artifacts
+end_time: 1678457663497
+entry_point_name: ''
+experiment_id: '810173965383581669'
+lifecycle_stage: active
+run_id: d3e4da974fd74d7bae8d24ac49eace2e
+run_name: handsome-fly-109
+run_uuid: d3e4da974fd74d7bae8d24ac49eace2e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678457645638
+status: 3
+tags: []
+user_id: janni

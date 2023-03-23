@@ -1,0 +1,1 @@
+MLPRegressor(activation='tanh', hidden_layer_sizes=(150, 150), solver='sgd')

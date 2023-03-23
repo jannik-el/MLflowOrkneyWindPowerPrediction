@@ -1,0 +1,25 @@
+artifact_path: best_estimator
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.10.9
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.2.1
+mlflow_version: 2.2.0
+model_uuid: e610ccfc4676478488b377b4f0177300
+run_id: c7b990daa7164cb38ebe4bc49ca0ae8f
+signature:
+  inputs: '[{"name": "ANM", "type": "double"}, {"name": "Non-ANM", "type": "double"},
+    {"name": "Total", "type": "double"}, {"name": "Direction", "type": "string"},
+    {"name": "Lead_hours", "type": "string"}, {"name": "Source_time", "type": "double"},
+    {"name": "Speed", "type": "double"}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+utc_time_created: '2023-03-10 13:59:11.154899'

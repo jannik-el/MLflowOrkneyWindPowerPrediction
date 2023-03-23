@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/mlruns/810173965383581669/e3ecd517e74c4404bc43142296b633fc/artifacts
+end_time: 1678883704910
+entry_point_name: ''
+experiment_id: '810173965383581669'
+lifecycle_stage: active
+run_id: e3ecd517e74c4404bc43142296b633fc
+run_name: dapper-mule-415
+run_uuid: e3ecd517e74c4404bc43142296b633fc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678883682134
+status: 3
+tags: []
+user_id: janni

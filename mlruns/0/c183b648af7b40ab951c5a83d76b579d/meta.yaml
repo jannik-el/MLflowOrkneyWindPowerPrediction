@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/mlruns/0/c183b648af7b40ab951c5a83d76b579d/artifacts
+end_time: 1678455867612
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c183b648af7b40ab951c5a83d76b579d
+run_name: aged-moth-629
+run_uuid: c183b648af7b40ab951c5a83d76b579d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678455843662
+status: 3
+tags: []
+user_id: janni

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/mlruns/810173965383581669/64aa8f0e00e94aea903f26bd5a4c2a22/artifacts
+end_time: 1678880672364
+entry_point_name: ''
+experiment_id: '810173965383581669'
+lifecycle_stage: active
+run_id: 64aa8f0e00e94aea903f26bd5a4c2a22
+run_name: sedate-sloth-493
+run_uuid: 64aa8f0e00e94aea903f26bd5a4c2a22
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678880646071
+status: 3
+tags: []
+user_id: janni

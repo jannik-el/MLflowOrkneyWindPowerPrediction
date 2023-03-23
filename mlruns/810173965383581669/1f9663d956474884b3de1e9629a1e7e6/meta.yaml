@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/mlruns/810173965383581669/1f9663d956474884b3de1e9629a1e7e6/artifacts
+end_time: 1678882823877
+entry_point_name: ''
+experiment_id: '810173965383581669'
+lifecycle_stage: active
+run_id: 1f9663d956474884b3de1e9629a1e7e6
+run_name: welcoming-dog-40
+run_uuid: 1f9663d956474884b3de1e9629a1e7e6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678882800151
+status: 3
+tags: []
+user_id: janni

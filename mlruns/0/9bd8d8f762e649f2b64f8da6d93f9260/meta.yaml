@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/mlruns/0/9bd8d8f762e649f2b64f8da6d93f9260/artifacts
+end_time: 1678455867612
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9bd8d8f762e649f2b64f8da6d93f9260
+run_name: upbeat-shoat-172
+run_uuid: 9bd8d8f762e649f2b64f8da6d93f9260
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1678455843662
+status: 3
+tags: []
+user_id: janni
