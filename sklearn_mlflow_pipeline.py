@@ -53,13 +53,7 @@ elif tracking_server == "local":
     # mlflow.set_tracking_uri("http://localhost:5000")
     pass
 
-mlflow.set_experiment("JELS-Orkney-Wind-sklearn-GridSearchCV")
-
-mlflow.start_run()
-mlflow.sklearn.autolog(max_tuning_runs=1)
-
 days = 90
-mlflow.log_param("days", days)
 data = fx.pull_data(days)
 
 pipeline = Pipeline(steps=[
@@ -93,16 +87,22 @@ gridsearch = GridSearchCV(pipeline, params, cv=tscv, scoring=scorer, n_jobs=-1, 
 
 X_train, y_train, X_test, y_test = fx.data_splitting(data, output_val="Total")
 
-gridsearch.fit(X_train, y_train)
+with mlflow.start_run() as run:
 
-mlflow.sklearn.log_model(gridsearch, "Model")
+    mlflow.set_experiment("JELS-Orkney-Wind-sklearn-GridSearchCV")
+    mlflow.log_param("days", days)
 
-predictions = gridsearch.predict(X_test)
+    gridsearch.fit(X_train, y_train)
 
-mlflow.log_metric("test_mse", fx.MSE(y_test, predictions))
+    print("logging model")
+    mlflow.sklearn.log_model(gridsearch, "Model")
 
-print("Done")
-mlflow.end_run()
+    print("predicting")
+    predictions = gridsearch.predict(X_test)
 
-# terminate the script
+    print("logging metrics")
+    mlflow.log_metric("test_mse", fx.MSE(y_test, predictions))
+
+    print("Done")
+
 exit()
