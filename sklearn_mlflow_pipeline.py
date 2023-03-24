@@ -35,7 +35,6 @@ warnings.filterwarnings('ignore')
 sys.path.append('..')
 import fx
 
-
 tracking_server = "my-azure"
 
 if tracking_server == "itu-training":
@@ -89,7 +88,7 @@ X_train, y_train, X_test, y_test = fx.data_splitting(data, output_val="Total")
 
 with mlflow.start_run() as run:
 
-    mlflow.set_experiment("JELS-Orkney-Wind-sklearn-GridSearchCV")
+    mlflow.set_experiment("Orkney-Windpower-Prediction")
     mlflow.log_param("days", days)
 
     gridsearch.fit(X_train, y_train)
@@ -104,5 +103,4 @@ with mlflow.start_run() as run:
     mlflow.log_metric("test_mse", fx.MSE(y_test, predictions))
 
     print("Done")
-
 exit()
