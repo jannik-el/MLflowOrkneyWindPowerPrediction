@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/mlruns/0/1f4a661ee5d84901bdfc9a5bc0a27f76/artifacts
+end_time: 1679666884701
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1f4a661ee5d84901bdfc9a5bc0a27f76
+run_name: efficient-gull-370
+run_uuid: 1f4a661ee5d84901bdfc9a5bc0a27f76
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1679666650957
+status: 4
+tags: []
+user_id: janni

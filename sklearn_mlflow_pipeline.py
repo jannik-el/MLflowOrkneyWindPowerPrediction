@@ -35,7 +35,7 @@ warnings.filterwarnings('ignore')
 sys.path.append('..')
 import fx
 
-tracking_server = "itu-training"
+tracking_server = "local"
 
 if tracking_server == "itu-training":
     mlflow.set_tracking_uri("http://training.itu.dk:5000/")
@@ -86,9 +86,8 @@ gridsearch = GridSearchCV(pipeline, params, cv=tscv, scoring=scorer, n_jobs=-1, 
 
 X_train, y_train, X_test, y_test = fx.data_splitting(data, output_val="Total")
 
+mlflow.set_experiment("Orkney-Windpower-Prediction")
 with mlflow.start_run() as run:
-
-    mlflow.set_experiment("Orkney-Windpower-Prediction")
     mlflow.log_param("days", days)
 
     gridsearch.fit(X_train, y_train)
