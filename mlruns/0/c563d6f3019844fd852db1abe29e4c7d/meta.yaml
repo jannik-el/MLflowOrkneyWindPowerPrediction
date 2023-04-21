@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/MLflowOrkneyWindPowerPrediction/mlruns/0/c563d6f3019844fd852db1abe29e4c7d/artifacts
+end_time: 1682076188541
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c563d6f3019844fd852db1abe29e4c7d
+run_name: shivering-stag-581
+run_uuid: c563d6f3019844fd852db1abe29e4c7d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682076142959
+status: 3
+tags: []
+user_id: janni
