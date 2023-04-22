@@ -102,8 +102,6 @@ with mlflow.start_run() as run:
     print("logging metrics")
     mlflow.log_metric("test_mse", fx.MSE(y_test, predictions))
 
-    mlflow.sklearn.log_metrics
-
     print("Done")
 exit()
 
