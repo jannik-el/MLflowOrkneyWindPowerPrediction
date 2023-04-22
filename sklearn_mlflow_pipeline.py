@@ -88,7 +88,7 @@ X_train, y_train, X_test, y_test = fx.data_splitting(data, output_val="Total")
 
 with mlflow.start_run() as run:
     mlflow.set_experiment("Orkney-Windpower-Prediction")
-    
+
     mlflow.log_param("days", days)
 
     gridsearch.fit(X_train, y_train)
@@ -102,5 +102,10 @@ with mlflow.start_run() as run:
     print("logging metrics")
     mlflow.log_metric("test_mse", fx.MSE(y_test, predictions))
 
+    mlflow.sklearn.log_metrics
+
     print("Done")
 exit()
+
+# conda env problems solution:
+# conda env export --no-builds > conda.yaml 
