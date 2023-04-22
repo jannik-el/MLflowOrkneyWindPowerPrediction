@@ -1,6 +1,6 @@
 name: My Project
 
-conda_env: conda_env2.yaml
+conda_env: conda2.yaml
 
 entry_points:
   main:
