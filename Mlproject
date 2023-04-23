@@ -1,6 +1,6 @@
 name: My Project
 
-conda_env: orkney_libs.yaml
+conda_env: third_try.yaml
 
 entry_points:
   main:
