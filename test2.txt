@@ -1,9 +1,3 @@
-name: mlflow-env
-channels:
-  - defaults
-dependencies:
-  - python=3.8.16
-  - pip:
     - attrs
     - azure-ai-ml
     - azure-common
@@ -39,7 +33,7 @@ dependencies:
     - isodate
     - jsonschema
     - kiwisolver
-    # - libffi
+    - libffi
     - marshmallow
     - mlflow-skinny
     - msal
@@ -50,7 +44,7 @@ dependencies:
     - opencensus
     - opencensus-context
     - opencensus-ext-azure
-    # - openssl
+    - openssl
     - packaging
     - pandas
     - pillow

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/MLflowOrkneyWindPowerPrediction/mlruns/0/dcd3a38f885647fe9e37a51f8d8e2a14/artifacts
+end_time: 1682785607331
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dcd3a38f885647fe9e37a51f8d8e2a14
+run_name: painted-wasp-142
+run_uuid: dcd3a38f885647fe9e37a51f8d8e2a14
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682785430108
+status: 4
+tags: []
+user_id: janni

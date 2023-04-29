@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/MLflowOrkneyWindPowerPrediction/mlruns/0/ec10b025cb024f66b0f59bd20ad86950/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ec10b025cb024f66b0f59bd20ad86950
+run_name: sedate-shoat-130
+run_uuid: ec10b025cb024f66b0f59bd20ad86950
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682786035942
+status: 1
+tags: []
+user_id: janni

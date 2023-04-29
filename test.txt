@@ -33,7 +33,7 @@ influxdb
 isodate
 jsonschema
 kiwisolver
-libffihd77b12b_6
+libffi
 marshmallow
 mlflow-skinny
 msal
@@ -44,7 +44,7 @@ oauthlib
 opencensus
 opencensus-context
 opencensus-ext-azure
-opensslth2bbff1b_0
+openssl
 packaging
 pandas
 pillow

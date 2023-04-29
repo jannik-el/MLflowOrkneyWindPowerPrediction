@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/MLflowOrkneyWindPowerPrediction/mlruns/0/27c4a993ad8e4aefb006dd68b9b2239d/artifacts
+end_time: 1682786165993
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 27c4a993ad8e4aefb006dd68b9b2239d
+run_name: orderly-squirrel-861
+run_uuid: 27c4a993ad8e4aefb006dd68b9b2239d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682786147660
+status: 4
+tags: []
+user_id: janni
