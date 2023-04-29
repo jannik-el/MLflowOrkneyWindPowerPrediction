@@ -90,3 +90,4 @@ dependencies:
     - vc
     - wheel
     - zipp
+    - matplotlib
