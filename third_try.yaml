@@ -1,6 +1,7 @@
 name: orkney_libs
 channels:
   - defaults
+  - conda-forge
 dependencies:
   - appdirs=1.4.4=pyhd3eb1b0_0
   - blas=1.0=mkl
