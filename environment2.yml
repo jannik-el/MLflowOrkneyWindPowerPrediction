@@ -13,6 +13,7 @@ dependencies:
     - azure-storage-blob
     - azure-storage-file-datalake
     - azure-storage-file-share
+    - azureml-mlflow
     # - ca-certificates
     - cachetools
     - certifi
