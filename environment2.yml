@@ -68,7 +68,7 @@ dependencies:
     - pyrsistent
     - python-dateutil
     - pytz
-    - pywin32
+    # - pywin32
     - pyyaml
     - requests
     - requests-oauthlib
