@@ -7,4 +7,4 @@ entry_points:
     parameters:
       tracking_server: {type: string, default: "local"}
       days: {type: int, default: 90}
-    command: "python sklearn_mlflow_pipeline.py {tracking_server} {days}"
+    command: "python sklearn_mlflow_pipeline.py -tracking_server {tracking_server} -days {days}"

@@ -28,12 +28,20 @@ from azure.ai.ml import MLClient
 from azure.identity import InteractiveBrowserCredential
 from azure.identity import DefaultAzureCredential
 import os
+import argparse
 
 warnings.filterwarnings('ignore')
 sys.path.append('..')
 import fx
 
-tracking_server = "local"
+parser = argparse.ArgumentParser()
+parser.add_argument("-tracking_server", help="Tracking server to use", default="local")
+parser.add_argument("-days", help="Number of days to pull data from", default=90)
+args = parser.parse_args()
+
+tracking_server = args.tracking_server
+days = args.days
+print(f"Running sklearn pipeline on tracking server: {tracking_server} and {days} days of data")
 
 if tracking_server == "itu-training":
     mlflow.set_tracking_uri("http://training.itu.dk:5000/")
@@ -41,7 +49,7 @@ if tracking_server == "itu-training":
     os.environ["AWS_ACCESS_KEY_ID"] = "training-bucket-access-key"
     os.environ["AWS_SECRET_ACCESS_KEY"] = "tqvdSsEDnBWTDuGkZYVsRKnTeu"
 
-elif tracking_server == "my-azure":
+elif tracking_server == "azure":
     ml_client = MLClient.from_config(credential=DefaultAzureCredential())
     mlflow_tracking_uri = ml_client.workspaces.get(ml_client.workspace_name).mlflow_tracking_uri
     mlflow.set_tracking_uri(mlflow_tracking_uri)
@@ -50,7 +58,6 @@ elif tracking_server == "local":
     # mlflow.set_tracking_uri("http://localhost:5000")
     pass
 
-days = 90
 data = fx.pull_data(days)
 
 pipeline = Pipeline(steps=[
