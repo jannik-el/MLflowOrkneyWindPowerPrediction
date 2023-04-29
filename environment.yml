@@ -11,3 +11,4 @@ dependencies:
     - influxdb
     - matplotlib
     - ewtpy
+    - scikit-learn-intelex

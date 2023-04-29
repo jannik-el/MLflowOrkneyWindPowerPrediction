@@ -20,7 +20,7 @@ from sklearn.linear_model import RANSACRegressor
 from sklearn.gaussian_process import GaussianProcessRegressor
 from sklearn.gaussian_process.kernels import RBF
 
-# from sklearnex import patch_sklearn
+from sklearnex import patch_sklearn
 import warnings
 import sys
 import datetime as dt
@@ -30,7 +30,7 @@ from azure.identity import InteractiveBrowserCredential
 from azure.identity import DefaultAzureCredential
 import os
 
-# patch_sklearn()
+patch_sklearn()
 warnings.filterwarnings('ignore')
 sys.path.append('..')
 import fx
