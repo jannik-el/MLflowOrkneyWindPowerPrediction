@@ -1,0 +1,17 @@
+# Python version required to run the project.
+python: "3.9.13"
+# Dependencies required to build packages. This field is optional.
+build_dependencies:
+  - pip
+  - setuptools
+# Dependencies required to run the project.
+dependencies:
+  - mlflow
+  - scikit-learn
+  - azure-ai-ml
+  - azure-identity
+  - influxdb
+  - pandas
+  - numpy
+  - matplotlib
+  - ewtpy

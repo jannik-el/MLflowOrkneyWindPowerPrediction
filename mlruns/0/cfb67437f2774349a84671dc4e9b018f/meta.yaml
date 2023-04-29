@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/MLflowOrkneyWindPowerPrediction/mlruns/0/cfb67437f2774349a84671dc4e9b018f/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cfb67437f2774349a84671dc4e9b018f
+run_name: chill-shark-683
+run_uuid: cfb67437f2774349a84671dc4e9b018f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682762779685
+status: 1
+tags: []
+user_id: janni
