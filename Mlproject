@@ -1,6 +1,6 @@
 name: OrkneyWind
 
-conda_env: environment.yml
+conda_env: environment2.yml
 
 entry_points:
   main:

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/MLflowOrkneyWindPowerPrediction/mlruns/0/2d2fd3cf7759480c993f087e2fcad684/artifacts
+end_time: 1682777130708
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2d2fd3cf7759480c993f087e2fcad684
+run_name: traveling-fawn-624
+run_uuid: 2d2fd3cf7759480c993f087e2fcad684
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682777004517
+status: 4
+tags: []
+user_id: janni

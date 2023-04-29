@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/MLflowOrkneyWindPowerPrediction/mlruns/0/f5c51cf8eec94b27a1538f9e819e58f4/artifacts
+end_time: 1682775040818
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f5c51cf8eec94b27a1538f9e819e58f4
+run_name: beautiful-finch-364
+run_uuid: f5c51cf8eec94b27a1538f9e819e58f4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682774924090
+status: 4
+tags: []
+user_id: janni
