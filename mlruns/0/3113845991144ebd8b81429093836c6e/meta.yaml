@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/MLflowOrkneyWindPowerPrediction/mlruns/0/3113845991144ebd8b81429093836c6e/artifacts
+end_time: 1682773651120
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 3113845991144ebd8b81429093836c6e
+run_name: flawless-auk-65
+run_uuid: 3113845991144ebd8b81429093836c6e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682773635576
+status: 4
+tags: []
+user_id: janni
