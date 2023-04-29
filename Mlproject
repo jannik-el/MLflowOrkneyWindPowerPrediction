@@ -1,6 +1,6 @@
 name: My Project
 
-conda_env: third_try.yaml
+conda_env: conda.yaml
 
 entry_points:
   main:
