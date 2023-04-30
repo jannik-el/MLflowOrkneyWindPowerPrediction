@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/janni/OneDrive%20-%20ITU/Documents/UNI/4Semester/LSDA/Assignments/A2/MLflowOrkneyWindPowerPrediction/mlruns/0/78f8ec1c19de422fb86cd2c77f325541/artifacts
+end_time: 1682862824793
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 78f8ec1c19de422fb86cd2c77f325541
+run_name: nosy-whale-968
+run_uuid: 78f8ec1c19de422fb86cd2c77f325541
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1682862795870
+status: 3
+tags: []
+user_id: janni

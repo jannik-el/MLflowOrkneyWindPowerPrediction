@@ -1,0 +1,16 @@
+name: mlflow-env
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pip:
+    - mlflow-skinny
+    - scikit-learn
+    - pandas
+    - azure-ai-ml
+    - influxdb
+    - matplotlib
+    - ewtpy
+    - azureml-mlflow
+    - msrest
+    - requests
