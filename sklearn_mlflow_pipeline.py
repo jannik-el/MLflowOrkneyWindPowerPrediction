@@ -91,7 +91,7 @@ gridsearch = GridSearchCV(pipeline, params, cv=tscv, scoring=scorer, n_jobs=-1, 
 X_train, y_train, X_test, y_test = fx.data_splitting(data, output_val="Total")
 
 mlflow.start_run()
-# mlflow.set_experiment("Orkney-Windpower-Prediction")
+mlflow.set_experiment("Orkney-Windpower-Prediction")
 
 mlflow.log_param("days", days)
 
