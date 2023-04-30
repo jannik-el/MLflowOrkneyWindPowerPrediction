@@ -24,8 +24,8 @@ import warnings
 import sys
 import datetime as dt
 import mlflow
-from azure.ai.ml import MLClient
-from azure.identity import DefaultAzureCredential, AzureCliCredential, InteractiveBrowserCredential
+# from azure.ai.ml import MLClient
+# from azure.identity import DefaultAzureCredential, AzureCliCredential, InteractiveBrowserCredential
 import os
 import argparse
 
@@ -48,10 +48,10 @@ if tracking_server == "itu-training":
     os.environ["AWS_ACCESS_KEY_ID"] = "training-bucket-access-key"
     os.environ["AWS_SECRET_ACCESS_KEY"] = "tqvdSsEDnBWTDuGkZYVsRKnTeu"
 
-elif tracking_server == "azure":
-    ml_client = MLClient.from_config(credential=DefaultAzureCredential())
-    mlflow_tracking_uri = ml_client.workspaces.get(ml_client.workspace_name).mlflow_tracking_uri
-    mlflow.set_tracking_uri(mlflow_tracking_uri)
+# elif tracking_server == "azure":
+#     ml_client = MLClient.from_config(credential=DefaultAzureCredential())
+#     mlflow_tracking_uri = ml_client.workspaces.get(ml_client.workspace_name).mlflow_tracking_uri
+#     mlflow.set_tracking_uri(mlflow_tracking_uri)
 
 elif tracking_server == "local":
     # mlflow.set_tracking_uri("http://localhost:5000")
