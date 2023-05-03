@@ -53,8 +53,10 @@ if tracking_server == "itu-training":
 #     mlflow_tracking_uri = ml_client.workspaces.get(ml_client.workspace_name).mlflow_tracking_uri
 #     mlflow.set_tracking_uri(mlflow_tracking_uri)
 
-elif tracking_server == "local":
-    # mlflow.set_tracking_uri("http://localhost:5000")
+elif tracking_server == "azure-vm":
+    mlflow.set_tracking_uri("http://52.152.163.223:5000/")
+
+else:
     pass
 
 data = fx.pull_data(days)
@@ -90,8 +92,8 @@ gridsearch = GridSearchCV(pipeline, params, cv=tscv, scoring=scorer, n_jobs=-1, 
 
 X_train, y_train, X_test, y_test = fx.data_splitting(data, output_val="Total")
 
+# mlflow.set_experiment("Orkney-Windpower-Prediction")
 with mlflow.start_run() as run:
-    mlflow.set_experiment("Orkney-Windpower-Prediction")
 
     mlflow.log_param("days", days)
 
